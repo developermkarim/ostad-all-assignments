@@ -10,7 +10,7 @@ function  oddEven($number)
         return "$number is Odd Number";
     }
 }
-echo oddEven(8);  echo "<br>";
+echo oddEven(8); 
 
 $initial = 0;
 // $arr = [];
@@ -23,3 +23,25 @@ echo "Total Numbers or 1 to 100 = " . $initial;
 // print_r($arr);
 
 // echo array_sum($arr);
+echo "<br>";
+
+function FunctionName($x,$y)
+{
+    $x = 4;
+    $y = 3;
+    $z = $x + $y/$y + $x;
+    echo $z;
+    
+};
+
+FunctionName(3,4);
+
+$foo = function($x){
+    return $x *2;
+};
+
+$bar = function($x)
+use($foo){
+    return $foo($x) + 1;
+};
+echo $bar(5);
